@@ -22,6 +22,6 @@ if __name__ == "__main__":
     target_password = "apple"
 
     # A list of password guesses (our 'wordlist')
-    guesses = ["123456", "password", "admin", "apple", "letmein"]
+    guesses = ["123456", "password", "admin", "apple", "letmein", "qwerty," "1q2w3e4r5t," "12345", "111111", "1234567890",]
 
     check_password(target_password, guesses)
