@@ -1,0 +1,27 @@
+# Simple educational burte force hack - NOT for illegal use!
+
+def check_password(target_password, guesses):
+    """
+    Checks if the target_password is present in the guesses list.
+    Args:
+        target_password (str): The password to guess.
+        guesses (list[str]): A list of password guesses.
+    Returns:
+        bool: True if the password is found, False otherwise.
+    """
+    for guess in guesses:
+        print(f"Trying password: {guess!r}")
+        if guess == target_password:
+            print("Password found!")
+            return True
+    print("Password not found.")
+    return False
+
+if __name__ == "__main__":
+    # The target password we're trying to guess
+    target_password = "apple"
+
+    # A list of password guesses (our 'wordlist')
+    guesses = ["123456", "password", "admin", "apple", "letmein"]
+
+    check_password(target_password, guesses)
